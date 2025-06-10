@@ -1,1 +1,1 @@
-
+The Noshary Management System is a user-friendly bakery management application developed using Python and MySQL. It handles customer orders, tracks pastry inventory, and generates monthly sales reports. The system features a login interface, options to add, update, delete, search, and display orders, along with a separate view for products and performance reports.
