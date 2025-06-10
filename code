@@ -10,7 +10,7 @@ root.geometry("300x300")
 root.title("Login")  #to change the title to login
 
 
-con=f.connect(host='localhost',user='root',password='12345',database='shop')
+con=f.connect(host='localhost',user='root',password='Enter your password',database='shop')
 cur=con.cursor()
 cur.execute('create table if not exists sweet(ORDER_NO int,NAME_OF_CUSTOMER varchar(20),PHONE_NO bigint,PASTRY_TYPE varchar(20),DELIVERY_DATE date,PLACE_OF_DELIVERY varchar(20),COST bigint)')
 
@@ -26,7 +26,7 @@ Label(root,text='Password',font=('Calibri',10),bg='pink').place(x=20,y=110)
 id4=Entry(root)
 id4.place(x=150,y=110)
 id4.config(show='*')  #to hide the password
-photo2=Image.open("C:\\Users\\Anil Paul\\Downloads\\pic.png")
+photo2=Image.open("pic.png")
 photo2=photo2.resize((100,80))
 photo2=ImageTk.PhotoImage(photo2)
 Label(root,image=photo2).place(x=25,y=180)
@@ -60,7 +60,7 @@ def login():
 def tig():
     new=Toplevel(root)   #to open another window to proceed      
     new.title('Noshary System')
-    photo=Image.open("C:\\Users\\Anil Paul\\Downloads\\download.png")
+    photo=Image.open("download.png")
     photo=photo.resize((200,150))
     photo=ImageTk.PhotoImage(photo)
     Label(new,text='Bliss in every bite.....').grid(row=1,sticky=N)
@@ -73,8 +73,6 @@ def tig():
     new.mainloop()   #tells python to run the tkinter window.
 
 #---------------------------INSERTING ORDERS-------------------------------
-
-
 
 def order():
     global i
